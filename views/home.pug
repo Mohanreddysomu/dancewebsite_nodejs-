@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block styles
+  link(rel="stylesheet", href="../static/style.css")
+
+block content
+  section#intro 
+    div Welcome to Mohan Dance Academy 
+    div.small Eat Sleep Dance Repeat
+
+  section#mission 
+    h2 Our Mission
+    div.card
+      h3 Dance Perfection
+      div.card-box
+        div.card-img
+          img(src='/static/pug img 2.webp', alt="Dance Perfection Image")
+        div.card-content
+          p This is the best dance academy of the universe.
+    div.card
+      h3 Dance as you like
+      div.card-box
+        div.card-img
+          img(src='/static/pug img 2.webp', alt="Dance as you like Image")
+        div.card-content
+          p This is the best dance academy of the universe.
+    div.card
+      h3 Expert Teaching
+      div.card-box
+        div.card-img
+          img(src='/static/pug img 2.webp', alt="Expert Teaching Image")
+        div.card-content
+          p This is the best dance academy of the universe.
+
+  section#sponcers 
+    h2 Our Sponcers
+    div#sponcer
+      img(src='/static/logo.1.webp', alt="sponser image", class="spimage")
+      img(src='/static/logo.2.webp', alt="sponser image", class="spimage")
+      img(src='/static/logo.3.webp', alt="sponser image", class="spimage")
+      img(src='/static/logo .4.webp', alt="sponser image", class="spimage")

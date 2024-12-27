@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Nani Dance Academy
+    block scripts
+    block styles
+      link(rel="stylesheet", href="/static/style.css")  // Ensure this is included if styles need to be globally applied.
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src='/static/pug img 3.webp', alt="HDA Logo")
+          | HDA
+        li: a(href="/") Home
+        li: a(href="/about") About
+        li: a(href="/services") Services
+        li: a(href="/class-info") Class Info
+        li: a(href="/contact") Contact Us
+    block content
+    section#footer
+      | Copyright 2024 nani dance academy.com | all rights are here
